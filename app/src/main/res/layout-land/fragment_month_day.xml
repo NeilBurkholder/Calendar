@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/medium_margin">
 
-    <com.simplemobiletools.calendar.pro.views.MonthViewWrapper
+    <com.ncautomation.calendar.pro.views.MonthViewWrapper
         android:id="@+id/month_day_view_wrapper"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/month_day_view_wrapper">
 
-        <com.simplemobiletools.commons.views.MyTextView
+        <com.ncautomation.commons.views.MyTextView
             android:id="@+id/month_day_selected_day_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:textSize="22sp"
             tools:text="November 19" />
 
-        <com.simplemobiletools.commons.views.MyTextView
+        <com.ncautomation.commons.views.MyTextView
             android:id="@+id/month_day_no_events_placeholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:textStyle="italic"
             android:visibility="gone" />
 
-        <com.simplemobiletools.commons.views.MyRecyclerView
+        <com.ncautomation.commons.views.MyRecyclerView
             android:id="@+id/month_day_events_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -58,7 +58,7 @@
             android:clipToPadding="false"
             android:layoutAnimation="@anim/layout_animation"
             android:scrollbars="vertical"
-            app:layoutManager="com.simplemobiletools.commons.views.MyLinearLayoutManager" />
+            app:layoutManager="com.ncautomation.commons.views.MyLinearLayoutManager" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -61,6 +61,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
             if (keystorePropertiesFile.exists()) {
                 signingConfig = signingConfigs.getByName("release")
             }
@@ -97,7 +98,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.simple.mobile.tools.commons)
+    //implementation(libs.simple.mobile.tools.commons)
+    implementation(project(":commons"))
     implementation(libs.androidx.multidex)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.swiperefreshlayout)
